@@ -1,0 +1,97 @@
+/** set box size for each element within HTML to its own content box */
+html {
+    box-sizing: content-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/** design for header banner */
+header { 
+    width: 100%;
+    height: 0%;
+    padding: 0;
+    border: 0 solid;
+    background-size: 100%;
+    background-repeat: no-repeat;    
+    margin-left: auto;    
+    margin-right: auto;        
+}
+.banner {
+    width: 100%;
+    height: 100%;
+}
+
+/** design for navigation links on header */
+/* Three columns side-by-side */
+.column-of-header {
+    float: left;
+    width: 33.33%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    text-align: center;
+}
+/* Display the columns below each other instead for smaller screens */
+@media screen and (max-width: 650px) {
+    .column-of-header {
+        width: 100%;
+        display: block;
+    }
+}
+/* Add some shadows to create a card effect */
+.card-of-header {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/* Some left and right padding inside the container*/
+.container-of-header {
+    padding: 3rem 3rem 2rem;
+    padding-top: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    /*padding: 0 16px;*/
+}
+/* Clear floats */
+.container-of-header::after, .row-of-header::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/** design for media and text side-by-side*/
+.media-column {
+    float: left;
+    width: 50%; /* use 25% for four, and 50% for two, etc */
+    padding: 5px;
+}
+.media-text::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/** design for buttons in webpage */
+/* button for other links */
+.button-link {    
+    border: 1px solid #EAEAEA;
+    border-radius: 4px;
+    color: #555555;
+    padding: 4px 10px;
+}
+.button-link:hover {
+    background-color: #dd3535;
+}
+/* button for media files */
+.DEAJButton {
+	color: #fff;
+    background-color: #dd3535;
+    border-radius: 9999px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.125em;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    text-align: center;
+    text-decoration: none;
+    word-break: break-word;
+    box-sizing: border-box;
+}
