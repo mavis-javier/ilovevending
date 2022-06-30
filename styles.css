@@ -23,39 +23,75 @@ img.banner {
 }
 
 /** design for navigation links on header */
-/* Three columns side-by-side */
-.column-of-header {
-    float: left;
-    width: 33.33%;
-    margin-bottom: 16px;
-    padding: 0 8px;
+/* Three cards side-by-side */
+.cards {
+    display: flex;
+    justify-content: center;    
+    max-width: 100%;
+}
+
+/* Display the cards below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .cards {
+      width: 100%;
+      display: block;
+    }
+  }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background: #b0a9a9;
+    flex: 1 1 21rem;
+    align-items: center;
+    margin: 10px;
+    align-self: normal;
+    flex-direction: column;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+.card__image {
+    width: 100%;
+    display: block;
+}
+
+.card__content {
+    line-height: 1.5;       /* each line must be at least 1.5px away from each other for readability*/
+    font-size: 0.9em;       /* makes font size 90% of card size*/
+    padding: 15px;
     text-align: center;
 }
-/* Display the columns below each other instead for smaller screens */
-@media screen and (max-width: 650px) {
-    .column-of-header {
-        width: 100%;
-        display: block;
-    }
+
+/* removes margin size of first paragraph in card content to 0 */
+.card__content > p:first-of-type {
+    margin-top: 0;
 }
-/* Add some shadows to create a card effect */
-.card-of-header {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+/* removes margin size of last paragraph in card content to 0 */
+.card__content > p:last-of-type {
+    margin-bottom: 0;
 }
-/* Some left and right padding inside the container*/
-.container-of-header {
-    padding: 3rem 3rem 2rem;
-    padding-top: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 2rem;
-    padding-left: 3rem;
-    /*padding: 0 16px;*/
+
+/** adjusts "Read More" Section */
+/* Centers "Read More" and sets background color and shadowing*/
+.card__info {
+    padding: 15px;
+    text-align: center;
+    background: #fafafa;
+    font-size: 0.8em;
+    border-bottom: 2px solid #ccc;
 }
-/* Clear floats */
-.container-of-header::after, .row-of-header::before {
-    content: "";
-    clear: both;
-    display: table;
+/* designs the hover and click */
+.card__link {    
+    text-decoration: none;    
+    color:black;
+}
+.card__link:hover {
+    color: #dd3535;    
 }
 
 /** design for media and text side-by-side*/
@@ -79,7 +115,7 @@ img.banner {
     padding: 4px 10px;
 }
 .button-link:hover {
-    background-color: #dd3535;
+    border-color: #dd3535;    
 }
 /* button for media files */
 .DEAJButton {
