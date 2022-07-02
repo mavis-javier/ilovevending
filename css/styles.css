@@ -40,7 +40,7 @@ img.banner {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background: #b0a9a9;
+    background: #fafafa;
     flex: 1 1 21rem;
     align-items: center;
     margin: 10px;
@@ -83,7 +83,7 @@ img.banner {
     text-align: center;
     background: #fafafa;
     font-size: 0.8em;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid white;
 }
 /* designs the hover and click */
 .card__link {    

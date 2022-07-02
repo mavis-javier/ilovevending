@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link styles.css and inquiry.css-->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/inquiry.css">
+
+    <title>Contact Us!</title>
+</head>
+<body>
+    <header id="top">
+        <div id="banner">
+            <img class="banner" src="./images/DEAJ banner.png" 
+            alt="Discover Optimized Health with Vending" title="DEAJ Vending Banner"/>  
+            <h1><a href="./Index.html">DEAJ Investments LLC || 
+                @ilovevending in DFW Metroplex
+            </a></h1>    
+        </div>        
+    </header>    
+    <div class="container__contact-us">        
+        <form action="https://formspree.io/f/mwkyjgvv" method="POST">
+            <h2 class="contact-us"><strong>
+                Contact Us Today! 
+            </strong></h2>
+            <h3>We'd love to hear from you!</h3>  
+            <div class="styled-input-wide">
+                <input type="text" name="Name" required />
+                <label>Name</label>
+            </div>          
+            <div class="styled-input">
+                <input type="email" name="Email" required />
+                <label>Email</label>
+            </div>
+            <div class="styled-input" style="float: right;">
+                <input type="text" name="Phone Number" required />
+                <label>Phone Number</label>
+            </div>
+            <!--
+            <div class="styled-input-wide">
+                <select name="City" id="city-dropdown">
+                    <option value="unlisted">City Not Listed</option>
+                    <option value="carrollton">Carrollton</option>
+                    <option value="coppell">Coppell</option>
+                    <option value="dallas">Dallas</option>
+                    <option value="denton">Denton</option>
+                    <option value="flower-mound">Flower Mound</option>
+                    <option value="fort-worth">Fort-Worth</option>
+                    <option value="frisco">Frisco</option>
+                    <option value="grapevine">Grapevine</option>
+                    <option value="irving">Irving</option>
+                    <option value="lewisville">Lewisville</option>
+                    <option value="little-elm">Little Elm</option>
+                    <option value="plano">Plano</option>
+                    <option value="richardson">Richardson</option>                
+                </select>    
+            </div>     
+            -->                              
+            <div class="styled-input-wide">
+                <textarea name="Message" id="form-message" required></textarea>
+                <label>Message</label>
+            </div>        
+            
+            <div class="submit-btn">
+                Send
+            </div>            
+        </form>        
+    </div>    
+    <footer>
+        <p style="text-align: center;"><a href="#top">Back to the Top</a></p>
+        <div id="footer" style="text-align: center;"></div>
+        <script src="./js/copyright.js"></script>
+    </footer>
+</body>
+</html>
