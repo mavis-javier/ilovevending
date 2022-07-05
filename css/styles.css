@@ -106,6 +106,41 @@ img.banner {
     display: table;
 }
 
+/** Gallery on Vending Machines Page */
+.gallery {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+  
+    box-sizing: border-box;
+    padding: var(--gap);
+  
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+  }
+  
+  .gallery > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* hover image upwards */
+  .gallery > img:hover {    
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+  
+  /* Anything under 1024px */
+  @media screen and (max-width: 1024px) {
+    .gallery {
+      --num-cols: 2;
+      --row-height: 200px;
+    }
+  }
+
 /** design for buttons in webpage */
 /* button for other links */
 .button-link {    
