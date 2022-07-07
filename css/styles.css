@@ -51,7 +51,7 @@ img.banner {
 .card:hover {
     cursor: pointer;
     transform: scale(1.03);
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .card__image {
@@ -121,13 +121,13 @@ img.banner {
     gap: var(--gap);
   }
   
-  .gallery > img {
+.gallery > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  /* hover image upwards */
-  .gallery > img:hover {    
+}
+/* hover image upwards */
+.gallery > img:hover {    
     cursor: pointer;
     opacity: 0.5;
     transition: 0.5s;
@@ -141,15 +141,17 @@ img.banner {
     }
   }
 
+
 /** design for buttons in webpage */
 /* button for other links */
-.button-link {    
+button.button-link {    
     border: 1px solid #EAEAEA;
     border-radius: 4px;
     color: #555555;
     padding: 4px 10px;
+    background: transparent;
 }
-.button-link:hover {
+button.button-link:hover {
     border-color: #dd3535;    
 }
 /* button for media files */

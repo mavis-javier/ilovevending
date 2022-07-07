@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<!-- set text left-to-right, english language, and uses Open Graph Protocol (ogp) 
-    to set default preview of website -->
-<html dir="ltr" lang="en" prefix="og: https://ogp.me/ns#">
-<head>        
-    <!-- Deals with older versions than IE9 -->
-    <!--[if lt IE 9]>
-        <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
-    <![endif]-->   
-
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="author" content="Mavis Javier" />    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-        
-    <!-- Link styles.css and inquiry.css-->
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <link rel="stylesheet" type="text/css" href="./css/inquiry.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Us!</title>
+    <!-- Link styles.css -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">   
+    <link rel="stylesheet" text="text/css" href="./css/contact.css"> 
+
+    <!-- Link favicon for different browsers-->
+    <link rel="apple-touch-icon" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" href="./images/favicon/favicon.ico">
+    <link rel="icon" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" sizes="192x192" href="./images/favicon/android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" href="./images/favicon/android-chrome-512x512.png">
+
+    <title>The Full Line Vending Machines at DFW</title>
 </head>
-<body>
+
+<body>    
     <header id="top">
         <div id="banner">
             <img class="banner" src="./images/DEAJ banner.png" 
@@ -29,54 +30,36 @@
             </a></h1>    
         </div>        
     </header>    
-    <div class="container__contact-us">        
-        <form action="https://formspree.io/f/mwkyjgvv" method="POST">
-            <h2 class="contact-us"><strong>
-                Contact Us Today! 
-            </strong></h2>
-            <h3>We'd love to hear from you!</h3>  
-            <div class="styled-input-wide">
-                <input type="text" name="Name" required />
-                <label>Name</label>
-            </div>          
-            <div class="styled-input">
-                <input type="email" name="Email" required />
-                <label>Email</label>
-            </div>
-            <div class="styled-input" style="float: right;">
-                <input type="text" name="Phone Number" required />
-                <label>Phone Number</label>
-            </div>
-            <!--
-            <div class="styled-input-wide">
-                <select name="City" id="city-dropdown">
-                    <option value="unlisted">City Not Listed</option>
-                    <option value="carrollton">Carrollton</option>
-                    <option value="coppell">Coppell</option>
-                    <option value="dallas">Dallas</option>
-                    <option value="denton">Denton</option>
-                    <option value="flower-mound">Flower Mound</option>
-                    <option value="fort-worth">Fort-Worth</option>
-                    <option value="frisco">Frisco</option>
-                    <option value="grapevine">Grapevine</option>
-                    <option value="irving">Irving</option>
-                    <option value="lewisville">Lewisville</option>
-                    <option value="little-elm">Little Elm</option>
-                    <option value="plano">Plano</option>
-                    <option value="richardson">Richardson</option>                
-                </select>    
-            </div>     
-            -->                              
-            <div class="styled-input-wide">
-                <textarea name="Message" id="form-message" required></textarea>
-                <label>Message</label>
-            </div>        
-            
-            <div class="submit-btn">
-                Send
-            </div>            
-        </form>        
-    </div>    
+
+    <div class="contact-form">
+    <form action="https://formspree.io/f/mwkyjgvv">
+        <h2 class="form-header">
+            Let's Keep in Touch.
+            <br>
+            It's Easy.
+        </h2>
+        <div class="input-group">
+            <input type="text" id="name" required> 
+            <label for="name">Name</label>
+        </div>        
+        <div class="input-group">
+            <input type="text" id="email" required>
+            <label for="email">Email</label>
+        </div>        
+        <div class="input-group">
+            <input type="number" id="phoneNum" required>
+        <label for="phoneNum">Phone Number</label>  
+        </div>
+        <div class="input-group">
+            <textarea id="message" rows="8" required></textarea>
+            <label for="message">Message</label>
+        </div>              
+        <button type="submit">
+            SUBMIT
+        </button>
+    </form>
+    </div>
+
     <footer>
         <p style="text-align: center;"><a href="#top">Back to the Top</a></p>
         <div id="footer" style="text-align: center;"></div>
