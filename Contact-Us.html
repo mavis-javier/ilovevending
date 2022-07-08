@@ -32,26 +32,26 @@
     </header>    
 
     <div class="contact-form">
-    <form action="https://formspree.io/f/mwkyjgvv">
+    <form action="https://formspree.io/f/mwkyjgvv" method="POST">
         <h2 class="form-header">
             Let's Keep in Touch.
             <br>
             It's Easy.
         </h2>
         <div class="input-group">
-            <input type="text" id="name" required> 
+            <input type="text" name="name" id="name" required> 
             <label for="name">Name</label>
         </div>        
         <div class="input-group">
-            <input type="text" id="email" required>
+            <input type="text" name="email" id="email" required>
             <label for="email">Email</label>
         </div>        
         <div class="input-group">
-            <input type="number" id="phoneNum" required>
+            <input type="number" name="phone number" id="phoneNum" required>
         <label for="phoneNum">Phone Number</label>  
         </div>
         <div class="input-group">
-            <textarea id="message" rows="8" required></textarea>
+            <textarea id="message" name="message" rows="8" required></textarea>
             <label for="message">Message</label>
         </div>              
         <button type="submit">
