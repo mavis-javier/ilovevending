@@ -31,9 +31,18 @@
     <meta property="og::description" content="DEAJ provides vending machines for snacks, drinks, and coffee. Its brand name is &quot;I Love Vending&quot; since the family who runs this business sure loves vending!" />
     <meta property="og::image" content="./images/DEAJ Logo.gif" />
     <meta property="og::url" content="https://ilovevending.com" /> 
+        
+    <!-- Link other APIs -->
+    <!-- Link to Google Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Link to Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <!-- Link styles.css -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
     <!-- Link favicon for different browsers-->
     <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" href="images/favicon/favicon.ico">
@@ -42,11 +51,14 @@
     <link rel="icon" sizes="192x192" href="image/favicon/android-chrome-192x192.png">
     <link rel="icon" sizes="512x512" href="image/favicon/android-chrome-512x512.png">
     
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
     <title>DEAJ ilovevending at Dallas Fort-Worth</title>
 </head>
 
 <body>
-    <header id="top">
+    <header>
         <div id="banner">
             <img class="banner" src="./images/DEAJ banner.png" 
             alt="Discover Optimized Health with Vending" title="DEAJ Vending Banner"/>  
@@ -124,6 +136,9 @@
     <hr/>
 
     <section class="main-body">    
+        <button id="top">
+            <i class="material-icons">arrow_upward</i>
+        </button>
         <h3><div id="greeting"></div></h3>      
         <p class="contact-us"><strong><a href="./Contact-Us.html">
             Be one of our locations! Contact Us Right Now!
@@ -154,14 +169,12 @@
         </p>
     
         <section class="media-and-text">        
-            <div class="media-column">
-                <p>
-                    <a href="Vending-Machines.html" target="_blank">Seaga Infinity Combo 5 </a>
-                    Vending Machines are our top vending machines!
-                </p>
-                <img src="images/Vending Machines/Seaga INFC/Seaga-Infinity-Combo-5.jpg" 
-                alt="Seaga Seaga Infinity Combo 5 Vending Machine">
-            </div>
+            <p>
+                <a href="Vending-Machines.html" target="_blank">Seaga Infinity Combo 5 </a>
+                Vending Machines are our top vending machines!
+            </p>
+            <img src="images/Vending Machines/Seaga INFC/Seaga-Infinity-Combo-5.jpg" 
+            alt="Seaga Seaga Infinity Combo 5 Vending Machine">
         </section>
                 
         <div class="DEAJButton"><a class="DEAJButton" href="https://ilovevending.com/wp-content/uploads/2022/06/USDA-Smart-Snack-Program.pdf" target="_blank" rel="noreferrer noopener">
@@ -171,11 +184,11 @@
     </section>
           
     <footer>
-        <p style="text-align: center;"><a href="#top">Back to the Top</a></p>
         <div id="footer" style="text-align: center;"></div>
         <script src="./js/copyright.js"></script>
     </footer>
-    <script src="./js/c01.js"></script>  
+    <script src="./js/c01.js"></script> 
+    <script src="./js/scrollToTop.js"></script> 
 </body>
 
 

@@ -1,9 +1,23 @@
 /** set box size for each element within HTML to its own content box */
 html {
     box-sizing: content-box;
+    background-color: white;
 }
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+/** design for fonts and overall background */
+h1, h2, h3, body {
+    font-family: 'Poppins', sans-serif, 'Arial';
+}
+
+a {
+    color: #dd3535;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 /** design for header banner */
@@ -95,15 +109,17 @@ img.banner {
 }
 
 /** design for media and text side-by-side*/
-.media-column {
-    float: left;
-    width: 50%; /* use 25% for four, and 50% for two, etc */
-    padding: 5px;
+.media-and-text {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
 }
-.media-text::after {
-    content: "";
-    clear: both;
-    display: table;
+.media-and-text > img {
+    width: 100%;
+    height: auto;
 }
 
 /** Gallery on Vending Machines Page */
@@ -143,6 +159,24 @@ img.banner {
 
 
 /** design for buttons in webpage */
+/* scroll to the top button */
+button#top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #dd3535;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+#top:active {
+    background: #ae1e1e;
+}
 /* button for other links */
 button.button-link {    
     border: 1px solid #EAEAEA;
