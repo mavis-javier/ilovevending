@@ -190,6 +190,9 @@ button#top {
 #top:active {
     background: #ae1e1e;
 }
+
+/* social icons */
+
 /* button for other links */
 button.button-link {    
     border: 1px solid #EAEAEA;
