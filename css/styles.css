@@ -192,6 +192,15 @@ button#top {
 }
 
 /* social icons */
+#footer.social-icons {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 0px;
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+}
 
 /* button for other links */
 button.button-link {    
